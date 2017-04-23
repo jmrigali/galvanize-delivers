@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Order Page</title>
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
@@ -33,69 +34,114 @@
       <!-- Page Content goes here -->
       <div class="row">
         <div class="col s3 push-s9">
-4-columns wide pulled to the left by 8-columns.
+          <div class="order-summary">
+
+            <h1> Your Order</h1>
+            <h5> Item: </h5>
+            <h5> Subtotal:</h5>
+            <h5>Tax:</h5>
+            <br>
+            <h5>Delivery Total:</h5>
+          </div>
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="street" type="text" class="validate">
+          <label for="address">Street</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="city" type="password" class="validate">
+          <label for="city">City</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="state" type="password" class="validate">
+          <label for="state">State</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="zip" type="text" class="validate">
+          <label for="zip">Zip Code</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+
+          <div class="input-field inline">
+            <input id="email" type="email" class="validate">
+            <label for="email" data-error="wrong" data-success="right">Email</label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
     </div>
 
         <div class="col s9 pull-s3">
           <span class="flow-text">
             <span class="flow-text">
             <div class="col s12 m6">
-            <div class="card">
+            <div class="card" id="deer">
               <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
+                <img src="deer.jpg">
+                <span class="card-title">Deer</span>
               </div>
               <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
+                <p>Bambi </p>
+                <p>Price: $14.99</p>
               </div>
             </div>
           </div>
           <div class="col s12 m6">
-            <div class="card">
+            <div class="card" id="prairie-dog">
               <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
+                <img src="prairie-dog.jpg">
+                <span class="card-title">Prairie Dog</span>
               </div>
               <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
+                <p>Prairie-Doggin-it</p>
+                <p>Price: $8.99</p>
               </div>
             </div>
           </div>
           <div class="col s12 m6">
-            <div class="card">
+            <div class="card" id="raccoon">
               <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
+                <img src="raccoon.jpg">
+                <span class="card-title">Raccoon</span>
               </div>
               <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
+                <p>Trash Bandit</p>
+                <p>Price: $10.99</p>
               </div>
             </div>
           </div>
           <div class="col s12 m6">
-            <div class="card">
+            <div class="card" id="squirrel">
               <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
+                <img src="squirrel.jpg">
+                <span class="card-title">Squirrel</span>
               </div>
               <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
+                <p>Squirrel Nutking</p>
+                <p>Price: $8.99</p>
               </div>
             </div>
           </div>
@@ -146,5 +192,6 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
