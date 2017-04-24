@@ -6,10 +6,9 @@
   <link rel="stylesheet" href="styles.css">
 
   <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css"> -->
 
   <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
   <!--Import Google Icon Font-->
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
@@ -22,12 +21,15 @@
 <body>
   <nav>
     <div class="nav-wrapper teal">
-      <a href="index.html" class="brand-logo">gSchool Delivers</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+      <a href="index.html" class="brand-logo">Skidmark Delivers</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="order.html">Order</a></li>
       </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="order.html">Order</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
@@ -69,13 +71,13 @@
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="city" type="password" class="validate">
+                <input id="city" type="text" class="validate">
                 <label for="city">City</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="state" type="password" class="validate">
+                <input id="state" type="text" class="validate">
                 <label for="state">State</label>
               </div>
             </div>
@@ -97,9 +99,24 @@
           </form>
         </div>
 
-        <div class = "row">
-          <button type="submit"> Place Order</button>
-        </div>
+
+
+      <!-- Modal Trigger -->
+      <button data-target="modal1" class="btn waves-effect waves-light" type="submit" name="action" href="#modal1">Place Order
+          </button>
+
+
+ <!-- Modal Structure -->
+ <div id="modal1" class="modal">
+   <div class="modal-content">
+     <h4>Congratulations!</h4>
+     <p>You've just ordered Roadkill!</p>
+   </div>
+   <div class="modal-footer">
+     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+   </div>
+ </div>
+
       </div>
 
       <div class="col m9 pull-m3 s12">
@@ -179,21 +196,18 @@
           <p class="grey-text text-lighten-4">We are a hardworking organization that love to give back to the colorful community of Boulder Colorado. Taking the next step in economical cooking</p>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+
           <ul>
             <li><a class="white-text" href="index.html">Home</a></li>
-            <li><a class="white-text" href="order.html">Order Page</a></li>
-            <li><a class="white-text" href="#!">Careers</a></li>
-            <li><a class="white-text" href="#!">Contact Us</a></li>
+
           </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+
           <ul>
-            <li><a class="white-text" href="index.html">Home</a></li>
+
             <li><a class="white-text" href="order.html">Order Page</a></li>
-            <li><a class="white-text" href="#!">Careers</a></li>
-            <li><a class="white-text" href="#!">Contact Us</a></li>
+
           </ul>
         </div>
 
@@ -210,7 +224,8 @@
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
   <script src="main.js" charset="utf-8" defer></script>
 </body>
 

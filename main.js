@@ -4,6 +4,10 @@ $(document).ready(function() {
 
  $(".button-collapse").sideNav();
 
+ $('.modal').modal();
+
+ // $('#modal1').modal('open');
+
 var $card = $('.card');
 var $subTotal = 0;
 
@@ -36,7 +40,7 @@ for(let i = 0; i < $card.length; i++) {
   });
 }
 
-
-
+// var $toastContent = $('<span>I am toast content</span>');
+// Materialize.toast($toastContent, 5000);
 
 });
