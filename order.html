@@ -1,197 +1,217 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Order Page</title>
-    <link rel="stylesheet" href="styles.css">
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+<head>
+  <title>Order Page</title>
+  <link rel="stylesheet" href="styles.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-  <body>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">gSchool Delivers</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
-        </ul>
-      </div>
-    </nav>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-    <div class="container">
-      <!-- Page Content goes here -->
-      <div class="row">
-        <div class="col s3 push-s9">
-          <div class="order-summary">
-
-            <h1> Your Order</h1>
-            <h5> Item: </h5>
-            <h5> Subtotal:</h5>
-            <h5>Tax:</h5>
-            <br>
-            <h5>Delivery Total:</h5>
-          </div>
-
-  <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="street" type="text" class="validate">
-          <label for="address">Street</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="city" type="password" class="validate">
-          <label for="city">City</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="state" type="password" class="validate">
-          <label for="state">State</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="zip" type="text" class="validate">
-          <label for="zip">Zip Code</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12">
-
-          <div class="input-field inline">
-            <input id="email" type="email" class="validate">
-            <label for="email" data-error="wrong" data-success="right">Email</label>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-
+<body>
+  <nav>
+    <div class="nav-wrapper teal">
+      <a href="index.html" class="brand-logo">gSchool Delivers</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
     </div>
+  </nav>
 
-        <div class="col s9 pull-s3">
-          <span class="flow-text">
+  <div class="container">
+    <!-- Page Content goes here -->
+    <div class="row">
+      <div class="col m3 push-m9  s12">
+        <div class="order-summary">
+
+          <h4> Your Order</h4>
+          <div class="orders">
+            <ul style="font-size:2em">Items:<span id="items"></span></ul>
+          </div>
+          <div class="totals-group">
+            <h5 class="subtotal"> Subtotal: $<span id="subtotal"></span></h5>
+            <h5 class="tax">Tax: $<span id= "tax"></span></h5>
+            <br>
+            <h5 class="total">Delivery Total: $<span id = "total"></span></h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="street" type="text" class="validate">
+                <label for="address">Street</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="city" type="password" class="validate">
+                <label for="city">City</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="state" type="password" class="validate">
+                <label for="state">State</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="zip" type="text" class="validate">
+                <label for="zip">Zip Code</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+
+                <div class="input-field inline">
+                  <input id="email" type="email" class="validate">
+                  <label for="email" data-error="wrong" data-success="right">Email</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class = "row">
+          <button type="submit"> Place Order</button>
+        </div>
+      </div>
+
+      <div class="col m9 pull-m3 s12">
+        <span class="flow-text">
             <span class="flow-text">
             <div class="col s12 m6">
-            <div class="card" id="deer">
+            <div class="card medium">
               <div class="card-image">
-                <img src="deer.jpg">
+                <img src="deer.jpg" >
                 <span class="card-title">Deer</span>
-              </div>
-              <div class="card-content">
-                <p>Bambi </p>
-                <p>Price: $14.99</p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card" id="prairie-dog">
-              <div class="card-image">
-                <img src="prairie-dog.jpg">
-                <span class="card-title">Prairie Dog</span>
-              </div>
-              <div class="card-content">
-                <p>Prairie-Doggin-it</p>
-                <p>Price: $8.99</p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card" id="raccoon">
-              <div class="card-image">
-                <img src="raccoon.jpg">
-                <span class="card-title">Raccoon</span>
-              </div>
-              <div class="card-content">
-                <p>Trash Bandit</p>
-                <p>Price: $10.99</p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card" id="squirrel">
-              <div class="card-image">
-                <img src="squirrel.jpg">
-                <span class="card-title">Squirrel</span>
-              </div>
-              <div class="card-content">
-                <p>Squirrel Nutking</p>
-                <p>Price: $8.99</p>
-              </div>
-            </div>
-          </div>
-        </span>
-          </span>
+      </div>
+      <div class="card-content">
+        <h5 class="item">Bambi Souffle</h5>
+        <p class="price">$<span>14.99</span></p>
+      </div>
+      <div class="card-action">
+        <button>Order Item</button>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m6">
+    <div class="card medium">
+      <div class="card-image">
+        <img src="prairie-dog.jpg" alt="prairie-dog">
+        <span class="card-title">Prairie Dog</span>
+      </div>
+      <div class="card-content">
+        <h5 class="item">Prairie-Doggin-it-Bowl</h5>
+        <p class="price">$<span>8.99</span></p>
+      </div>
+      <div class="card-action">
+        <button>Order Item</button>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m6">
+    <div class="card medium">
+      <div class="card-image">
+        <img src="raccoon.jpg" style="height:8.2em">
+        <span class="card-title">Raccoon</span>
+      </div>
+      <div class="card-content">
+        <h5 class="item">Trash Panda Stew</h5>
+        <p class="price">$<span>10.99</span></p>
+      </div>
+      <div class="card-action">
+        <button>Order Item</button>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m6">
+    <div class="card medium">
+      <div class="card-image">
+        <img src="squirrel.jpg" style="height:8.2em">
+        <span class="card-title">Squirrel</span>
+      </div>
+      <div class="card-content">
+        <h5 class="item">Rocky's Stir-Fry</h5>
+        <p class="price">$<span>8.99</span></p>
+      </div>
+      <div class="card-action">
+        <button>Order Item</button>
+      </div>
+    </div>
+  </div>
+  </span>
+  </span>
+  </div>
+  </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Roadkill Restaurant</h5>
+          <p class="grey-text text-lighten-4">We are a hardworking organization that love to give back to the colorful community of Boulder Colorado. Taking the next step in economical cooking</p>
         </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="index.html">Home</a></li>
+            <li><a class="white-text" href="order.html">Order Page</a></li>
+            <li><a class="white-text" href="#!">Careers</a></li>
+            <li><a class="white-text" href="#!">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="index.html">Home</a></li>
+            <li><a class="white-text" href="order.html">Order Page</a></li>
+            <li><a class="white-text" href="#!">Careers</a></li>
+            <li><a class="white-text" href="#!">Contact Us</a></li>
+          </ul>
+        </div>
+
       </div>
     </div>
 
-    <footer class="page-footer orange">
+
+    <div class="footer-copyright">
       <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Company Bio</h5>
-            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-          </div>
-          <div class="col l3 s12">
-            <h5 class="white-text">Settings</h5>
-            <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-          <div class="col l3 s12">
-            <h5 class="white-text">Connect</h5>
-            <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-        </div>
+        &copy;2017 Made by Jodie Rigali
       </div>
+    </div>
+  </footer>
 
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="main.js" charset="utf-8" defer></script>
+</body>
 
-      <div class="footer-copyright">
-        <div class="container">
-        Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-        </div>
-      </div>
-    </footer>
-
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="main.js" charset="utf-8"></script>
-  </body>
 </html>

@@ -2,59 +2,47 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Galvanize Delivers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Skidmark Delivers</title>
 
   <!-- CSS  -->
-  <link rel="stylesheet" href="styles.css" type="text/css" media="screen,projection"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-
 <body>
-  <!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-  <li><a href="order.html">order</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
-</ul>
-<nav>
-  <div class="nav-wrapper">
-    <a href="#!" class="brand-logo"><i class="material-icons">star</i></a>
-    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>
-    <ul class="side-nav" id="mobile-demo">
-       <li><a href="sass.html">Sass</a></li>
-       <li><a href="badges.html">Components</a></li>
-       <li><a href="collapsible.html">Javascript</a></li>
-       <li><a href="mobile.html">Mobile</a></li>
-     </ul>
-  </div>
-</nav>
-<div id="index-banner" class="parallax-container">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <br><br>
-      <h1 class="header center teal-text text-lighten-2">Roadkill Restaurant</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Locally sourced meats right from your front yard</h5>
-      </div>
-      <div class="row center">
-        <a href="order.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Order Here</a>
-      </div>
-      <br><br>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo">      <i class="large material-icons">invert_colors</i>
+</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="order.html">Order</a></li>
+      </ul>
 
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="order.html">Order</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Skidmark Delivers</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Locally sourced meats right from your front yard</h5>
+        </div>
+        <div class="row center">
+          <a href="order.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Order Here</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="kitchen-photo.jpeg" alt="Unsplashed background img 1"></div>
   </div>
-  <div class="parallax"><img src="kitchen-photo.jpeg" alt="Pixabay background img 1"></div>
-</div>
 
 
   <div class="container">
@@ -64,7 +52,7 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
             <h5 class="center">Locally Sourced</h5>
 
             <p class="light">We grab local animals from the side of the road and grill them up. These animals may have left us suddenly, but we can celebrate their lives by preparing their bodies in the most delicious of fashions</p>
@@ -73,7 +61,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
             <h5 class="center">Economically Friendly</h5>
 
             <p class="light">By removing the deceased animals from the side of the road, we are cleaning up the city from the sites of death. We're sheltering children from these horrific tragedies</p>
@@ -82,7 +70,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
             <h5 class="center">Accessible</h5>
 
             <p class="light">If you have a recently deceased animal in your neighborhood, give us a call! We will pick it up and give it a proper end of life ceremony and... bonus for you! We will provide a discounted meal for you and your family!</p>
@@ -91,45 +79,78 @@
       </div>
 
     </div>
-    <br><br>
+  </div>
 
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">We are a hardworking organization that love to give back to the colorful community of Boulder Colorado. Taking the next step in economical cooking</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="highway.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
     <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
 
     </div>
   </div>
 
-  <footer class="page-footer orange">
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">We are a hardworking organization that love to give back to the colorful community of Boulder Colorado. Taking the next step in economical cooking</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="mountain-road.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">Skidmark Delivers</h5>
+          <p class="grey-text text-lighten-4">We are a hardworking organization that love to give back to the colorful community of Boulder Colorado. Taking the next step in economical cooking</p>
 
 
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Settings</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="index.html">Home</a></li>
+            <li><a class="white-text" href="order.html">Order Page</a></li>
+            <li><a class="white-text" href="#!">Careers</a></li>
+            <li><a class="white-text" href="#!">Contact Us</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Home</a></li>
-            <li><a class="white-text" href="#!">Order Page</a></li>
-            <li><a class="white-text" href="#!">Careers</a></li>
-            <li><a class="white-text" href="#!">Contact Us</a></li>
+            <li><a class="white-text" href="index.html">Home</a></li>
+              <li><a class="white-text" href="order.html">Order Page</a></li>
+              <li><a class="white-text" href="#!">Careers</a></li>
+              <li><a class="white-text" href="#!">Contact Us</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      &copy;2017 Made by Jodie Rigali
       </div>
     </div>
   </footer>
@@ -140,5 +161,6 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="main.js" charset="utf-8"></script>
+
   </body>
 </html>
