@@ -6,7 +6,9 @@ $(document).ready(function() {
 
  $('.modal').modal();
 
- // $('#modal1').modal('open');
+
+ // var $toastContent = $('<span>You have not filled out all of your information</span>');
+ // Materialize.toast($toastContent, 5000);
 
 var $card = $('.card');
 var $subTotal = 0;
@@ -40,7 +42,37 @@ for(let i = 0; i < $card.length; i++) {
   });
 }
 
-// var $toastContent = $('<span>I am toast content</span>');
-// Materialize.toast($toastContent, 5000);
+
+
+
+
+$('#orderbutton').click('a', function (event) {
+  var $firstName = $('#first_name');
+  var $lastName = $('#last_name');
+  var $street= $('#street');
+  var $city = $('#city');
+  var $state = $('#state');
+  var $zip = $('#zip');
+  var $email = $('#email');
+  var $total = $('#total').text();
+
+
+  if ($firstName.val().trim()=== ''||
+$lastName.val().trim()==='' ||
+$street.val().trim()=== ''||
+$city.val().trim()=== ''||
+$state.val().trim()=== '' ||
+$zip.val().trim()=== ''||
+$email.val().trim()=== '' ||
+$total === '' ) {
+  var $toastContent2 = $('<span>Uh-oh! Somethings not right!</span>');
+  Materialize.toast($toastContent2, 5000);
+  } else {
+  var $toastContent = $('<span>Hooray</span>');
+  Materialize.toast($toastContent, 5000);
+}
+});
+
+
 
 });
